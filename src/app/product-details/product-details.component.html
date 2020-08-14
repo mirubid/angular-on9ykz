@@ -1,0 +1,13 @@
+<p>
+product details works!
+</p>
+<span>{{product.name}}</span>
+<p *ngIf="product.description">{{product.description}}</p>
+<p>{{product.price | currency}}</p>
+
+
+
+
+<button (click)="addToCart(product)">Buy</button>
+
+<a [routerLink]="['/']">back</a>
